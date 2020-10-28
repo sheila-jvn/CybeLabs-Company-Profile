@@ -1,0 +1,31 @@
+h1 {
+    font-family: bold;
+}
+.about2 {
+    position: relative;
+    top: 90px;
+}
+.about2-text1 {
+    font-family: black;
+    font-size: 40px;
+}
+.about2-text2 {
+    font-family: semiBold;
+}
+.about2-text3 {
+    font-family: light;
+}
+.about3 {
+    position: relative;
+    top: 70px;
+}
+.about3-text1 {
+    font-family: black;
+    font-size: 40px;
+}
+.about3-text2 {
+    font-family: semiBold;
+}
+.about3-text3 {
+    font-family: light;
+}

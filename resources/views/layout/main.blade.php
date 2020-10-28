@@ -8,173 +8,18 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  @section('css')
+  <link rel="stylesheet" href="styles/app.css">
+  @show
 
   <title>@yield('title')</title>
 
-  <style>
-    .gambar-wrapper {
-      position: relative;
-    }
-
-    .crop {
-      position: absolute;
-      width: 100%;
-      height: 180%;
-      object-fit: cover;
-      object-position: 5% 50%;
-      filter: brightness(40%);
-      -webkit-filter: brightness(40%);
-    }
-
-    .gambar {
-      position: absolute;
-      max-width: 100%;
-      filter: brightness(70%);
-      -webkit-filter: brightness(70%);
-    }
-
-    @font-face {
-      font-family: semiBold;
-      src: url("font/Poppins-SemiBold.TTF")
-    }
-
-    @font-face {
-      font-family: medium;
-      src: url("font/Poppins-Medium.TTF")
-    }
-
-    .navbar-brand {
-      font-family: semiBold;
-    }
-
-    .navbar-nav {
-      font-size: 11px;
-      font-family: medium;
-    }
-
-    /*---------------------
-        Footer
-      -----------------------*/
-
-    .footer-section {
-      background: #191919;
-      padding-top: 75px;
-    }
-
-    .footer-left {
-      margin-bottom: 30px;
-    }
-
-    .footer-left h5 {
-      color: #ffffff;
-      font-weight: 700;
-      margin-bottom: 26px;
-      margin-left: 37px;
-    }
-
-    .footer-left ul li {
-      list-style: none;
-
-    }
-
-    .footer-left ul li p {
-
-      font-size: 16px;
-      color: #b2b2b2;
-
-    }
-
-    .footer-left .footer-social {
-      padding-top: 25px;
-      padding-left: 32px;
-    }
-
-    .footer-left .footer-social a {
-      display: inline-block;
-
-      margin-right: 7px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .footer-left .footer-social a:hover:before {
-      opacity: 1;
-    }
-
-    .footer-left .footer-social a:before {
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background: #e7ab3c;
-      content: "";
-      border-radius: 50%;
-      opacity: 0;
-      -webkit-transition: all 0.3s;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      z-index: -1;
-    }
-
-    .footer-widget {
-      margin-bottom: 30px;
-    }
-
-    .footer-widget h5 {
-      color: #ffffff;
-      font-weight: 700;
-      margin-bottom: 26px;
-      margin-left: 37px;
-    }
-
-    .footer-widget ul li {
-      list-style: none;
-
-    }
-
-    .footer-widget ul li a {
-      line-height: 36px;
-      font-size: 16px;
-      color: #b2b2b2;
-
-    }
-
-    .copyright-reserved {
-      border-top: 1px solid #303030;
-      padding: 15px 0;
-      margin-top: 45px;
-    }
-
-    .copyright-reserved .copyright-text {
-
-      font-size: 16px;
-      color: #b2b2b2;
-    }
-
-    .copyright-reserved .copyright-text a {
-      color: #b2b2b2;
-    }
-
-    .copyright-reserved .copyright-text i {
-      color: #cc2424;
-    }
-
-    .copyright-reserved .copyright-text a:hover {
-      color: #e7ab3c;
-    }
-
-    .copyright-reserved .payment-pic {
-      float: right;
-    }
-  </style>
 </head>
 
 <body>
 
   <div class="gambar-wrapper">
-    @if (\Request::is('/'))
+    @if (Request::is('/'))
     <img src="/img/bg-header.png" alt="" class="gambar">
     @else
     <img src="/img/bg-header.png" alt="" class="crop">
@@ -228,7 +73,7 @@
 
         <div class="col-lg-2 offset-lg-1">
           <div class="footer-widget">
-            <h5>Usefull links</h5>
+            <h5>Useful links</h5>
             <ul>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Hewan</a></li>
@@ -255,13 +100,13 @@
             <h5>Contact Info</h5>
             <ul>
               <li>
-                <p href="#" style="line-height: 20px; font-size: 16px; color: #b2b2b2;"><img src="{{asset('assets/mail.svg')}}" alt=""> Tropisianimal@gmail.com</p>
+                <p href="#" style="line-height: 20px; font-size: 16px; color: #b2b2b2;"><img src="img/mail.svg" alt=""> Tropisianimal@gmail.com</p>
               </li>
               <li>
-                <p href="#" style="line-height: 20px; font-size: 16px; color: #b2b2b2;"><img src="{{asset('assets/phone.svg')}}" alt=""> +62 812 3456 7890</p>
+                <p href="#" style="line-height: 20px; font-size: 16px; color: #b2b2b2;"><img src="img/phone.svg" alt=""> +62 812 3456 7890</p>
               </li>
               <li>
-                <p href="#" style="line-height: 20px; font-size: 16px; color: #b2b2b2;"><img src="{{asset('assets/map-pin.svg')}}" alt=""> Kota Bandung, Jawa Barat</p>
+                <p href="#" style="line-height: 20px; font-size: 16px; color: #b2b2b2;"><img src="img/map-pin.svg" alt=""> Kota Bandung, Jawa Barat</p>
               </li>
             </ul>
           </div>

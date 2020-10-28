@@ -1,64 +1,20 @@
 @extends('layout/main')
 
+@section('css')
+@parent
+<link rel="stylesheet" href="styles/tentang.css">
+@endsection
+
 @section('title', 'Tentang')
 
 @section('container')
-<style>
-@font-face{
-    font-family: bold;
-    src: url("font/Poppins-Bold.TTF")
-}
-@font-face{
-    font-family: light;
-    src: url("font/Poppins-Light.TTF")
-}
-@font-face{
-    font-family: black;
-    src: url("font/Poppins-Black.TTF")
-}
-@font-face{
-    font-family: semiBold;
-    src: url("font/Poppins-SemiBold.TTF")
-}
-h1{
-    font-family: bold;
-}
-.about2{
-    position: relative;
-    top: 90px;
-}
-.about2-text1{
-    font-family: black;
-    font-size: 40px;
-}
-.about2-text2{
-    font-family: semiBold;
-}
-.about2-text3{
-    font-family: light;
-}
-.about3{
-    position: relative;
-    top: 70px;
-}
-.about3-text1{
-    font-family: black;
-    font-size: 40px;
-}
-.about3-text2{
-    font-family: semiBold;
-}
-.about3-text3{
-    font-family: light;
-}
-</style>
-    <div class="container">
-        <div class="row">
-            <div class="col-10 mt-5 ml-4">
-                <h1 class="text-white">Tentang Kami</h1>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-10 mt-5 ml-4">
+            <h1 class="text-white">Tentang Kami</h1>
         </div>
     </div>
+</div>
 @endsection
 
 @section('about2')

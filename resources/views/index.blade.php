@@ -1,189 +1,13 @@
 @extends('layout/main')
 
+@section('css')
+@parent
+<link rel="stylesheet" href="/styles/index.css">
+@endsection
+
 @section('title', 'Tropisianimal')
 
 @section('container')
-<style>
-  @font-face {
-    font-family: bold;
-    src: url("font/Poppins-Bold.TTF")
-  }
-
-  @font-face {
-    font-family: light;
-    src: url("font/Poppins-Light.TTF")
-  }
-
-  @font-face {
-    font-family: extraBold;
-    src: url("font/Poppins-ExtraBold.TTF")
-  }
-
-  @font-face {
-    font-family: black;
-    src: url("font/Poppins-Black.TTF")
-  }
-
-  @font-face {
-    font-family: semiBold;
-    src: url("font/Poppins-SemiBold.TTF")
-  }
-
-  h1 {
-    font-family: bold;
-    font-size: 60px;
-  }
-
-  p {
-    font-family: light;
-    font-size: 13px;
-  }
-
-  .card-title {
-    font-family: bold;
-    font-size: 16px;
-  }
-
-  .card-text {
-    font-family: light;
-  }
-
-  .tentang-kami {
-    font-family: bold;
-    color: #047E00;
-  }
-
-  .about-text1 {
-    font-family: black;
-    font-size: 40px;
-  }
-
-  .about-text2 {
-    font-family: semiBold;
-  }
-
-  .about-text3 {
-    font-family: light;
-  }
-
-  .about-text4 {
-    font-family: black;
-    font-size: 30px;
-    position: absolute;
-  }
-
-  .container {
-    margin-bottom: 150px;
-  }
-
-  .about {
-    position: relative;
-    top: 50px;
-  }
-
-  .berita {
-    position: relative;
-    top: 50px;
-  }
-
-  .galeri {
-    position: relative;
-    top: 50px;
-  }
-
-  .berita-text1 {
-    font-family: black;
-    font-size: 40px;
-  }
-
-  .berita-text {
-    font-family: bold;
-    color: #047E00;
-  }
-
-  .galeri-text1 {
-    font-family: black;
-    font-size: 40px;
-  }
-
-  .galeri-text {
-    font-family: bold;
-    color: #047E00;
-  }
-
-  .galeri img {
-    overflow: hidden;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .btn {
-    font-family: light;
-    border-radius: 0;
-    font-size: 15px;
-    background-color: #047E00;
-  }
-
-  .gambar-2 {
-    position: absolute;
-    max-width: 100%;
-    filter: brightness(70%);
-    -webkit-filter: brightness(70%);
-  }
-
-  .gambar-wrapper {
-    position: relative;
-  }
-
-  .cont2-text {
-    font-family: bold;
-    font-size: 40px;
-    margin-bottom: 200px;
-  }
-
-  .card {
-    height: 250px;
-    width: 250px;
-    border-radius: 0;
-  }
-
-  .card-2 {
-    height: 20rem;
-    width: 20rem;
-    border-radius: 0;
-  }
-
-  .card-img-top {
-    width: 350px;
-    height: 200px;
-    object-position: 10% 30%;
-  }
-
-  .carousel-item1 {
-    width: 350px;
-    height: 200px;
-  }
-  
-  .lingkaran{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 50px;
-	  height: 50px;
-    background-color: #047E00;
-	  border-radius: 100%;
-  }
-
-  .tengah{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .img-card{
-    position:relative;
-  }
-</style>
 <div class="container">
   <div class="row">
     <div class="col-10 ml-4">
@@ -287,103 +111,104 @@
       </div>
     </div>
   </div>
-  @endsection
+</div>
+@endsection
 
-  @section('berita')
-  <section id="berita" class="berita pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-10 ml-4">
-          <p class="berita-text text-success">BERITA</p>
-          <h1 class="berita-text1">Baca Berita Terbaru Kami <br> Dalam Tropisianimal</h1>
-        </div>
+@section('berita')
+<section id="berita" class="berita pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 ml-4">
+        <p class="berita-text text-success">BERITA</p>
+        <h1 class="berita-text1">Baca Berita Terbaru Kami <br> Dalam Tropisianimal</h1>
       </div>
-      <div class="row row-cols-1 row-cols-md-3 mx-2 mt-5">
-        <div class="col mb-4">
-          <div class="card-2">
-            <img src="/img/harimau-1.png" class="card-img-top">
-            <div class="card-body text-center">
-              <h5 class="card-title">Apa Kabar Kebun Binatang Saat Wabah Covid-19?</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card-2">
-            <img src="/img/burung.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">Anugerah dari Hutan <br> Indonesia</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card-2">
-            <img src="/img/badak.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">10 Hewan Herbivora <br> Yang Berbahaya</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
-            </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mx-2 mt-5">
+      <div class="col mb-4">
+        <div class="card-2">
+          <img src="/img/harimau-1.png" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Apa Kabar Kebun Binatang Saat Wabah Covid-19?</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
           </div>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-md-3 mx-2">
-        <div class="col mb-4">
-          <div class="card-2">
-            <img src="/img/harimau-2.png" class="card-img-top">
-            <div class="card-body text-center">
-              <h5 class="card-title">4 Penyakit yang Ditularkan Hewan ke Manusia</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
-            </div>
+      <div class="col mb-4">
+        <div class="card-2">
+          <img src="/img/burung.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Anugerah dari Hutan <br> Indonesia</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
           </div>
         </div>
-        <div class="col mb-4">
-          <div class="card-2">
-            <img src="/img/terumbuKarang.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">Terumbu Karang: Pengertian, Jenis, Sebaran, dan Masalah</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card-2">
-            <img src="/img/jerapah.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">Ternyata, Tanduk Rusa Berasal dari Sel Kanker Tulang</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
-            </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card-2">
+          <img src="/img/badak.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">10 Hewan Herbivora <br> Yang Berbahaya</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  @endsection
-
-  @section('galeri')
-  <section id="galeri" class="galeri">
-    <div class="container">
-      <div class="row">
-        <div class="col-10 ml-4">
-          <p class="galeri-text text-success">GALERI</p>
-          <h1 class="galeri-text1">Lihat Lebih Banyak Hewan Tropis <br> Pada Galeri Kami</h1>
+    <div class="row row-cols-1 row-cols-md-3 mx-2">
+      <div class="col mb-4">
+        <div class="card-2">
+          <img src="/img/harimau-2.png" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">4 Penyakit yang Ditularkan Hewan ke Manusia</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card-2">
+          <img src="/img/terumbuKarang.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Terumbu Karang: Pengertian, Jenis, Sebaran, dan Masalah</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card-2">
+          <img src="/img/jerapah.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ternyata, Tanduk Rusa Berasal dari Sel Kanker Tulang</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit, sed do</p>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+@endsection
 
-    <div class="row no-gutters">
-      <div class="col-3">
-        <img src="/img/kadal.png" class="img-fluid">
-      </div>
-      <div class="col-3">
-        <img src="/img/orangUtan.png" class="img-fluid">
-      </div>
-      <div class="col-3">
-        <img src="/img/penyu.png" class="img-fluid">
-      </div>
-      <div class="col-3">
-        <img src="/img/burung-2.png" class="img-fluid">
+@section('galeri')
+<section id="galeri" class="galeri">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 ml-4">
+        <p class="galeri-text text-success">GALERI</p>
+        <h1 class="galeri-text1">Lihat Lebih Banyak Hewan Tropis <br> Pada Galeri Kami</h1>
       </div>
     </div>
-  </section>
-  @endsection
+  </div>
+
+  <div class="row no-gutters">
+    <div class="col-3">
+      <img src="/img/kadal.png" class="img-fluid">
+    </div>
+    <div class="col-3">
+      <img src="/img/orangUtan.png" class="img-fluid">
+    </div>
+    <div class="col-3">
+      <img src="/img/penyu.png" class="img-fluid">
+    </div>
+    <div class="col-3">
+      <img src="/img/burung-2.png" class="img-fluid">
+    </div>
+  </div>
+</section>
+@endsection

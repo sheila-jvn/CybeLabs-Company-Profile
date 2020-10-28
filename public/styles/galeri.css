@@ -1,0 +1,16 @@
+h1 {
+    font-family: bold;
+}
+
+.galeri2 {
+    position: relative;
+    top: 200px;
+    margin-bottom: 200px;
+}
+
+.carousel-inner2 {
+    width: 1110px;
+    height: 500px;
+    object-fit: cover;
+    object-position: 5% 50%;
+}
