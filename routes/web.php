@@ -15,10 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','HomeController@index');
 
-Route::get('/contoh','HomeController@contoh');
-
-Route::post('/contohPost', 'HomeController@contohPost');
-
 Route::get('/tentang', function () {
     return view('tentang');
 });
