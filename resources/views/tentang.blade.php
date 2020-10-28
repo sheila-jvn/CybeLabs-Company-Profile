@@ -7,14 +7,8 @@
 
 @section('title', 'Tentang')
 
-@section('container')
-<div class="container">
-    <div class="row">
-        <div class="col-10 mt-5 ml-4">
-            <h1 class="text-white">Tentang Kami</h1>
-        </div>
-    </div>
-</div>
+@section('hero')
+<h1 class="text-white">Tentang Kami</h1>
 @endsection
 
 @section('about2')

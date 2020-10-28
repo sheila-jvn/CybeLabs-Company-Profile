@@ -7,16 +7,10 @@
 
 @section('title', 'Tropisianimal')
 
-@section('container')
-<div class="container">
-  <div class="row">
-    <div class="col-10 ml-4">
-      <h1 class="text-white">Hewan</h1>
-      <h1 class="text-white">Tropis di Dunia</h1>
-      <p class="text-white mt-4">Lorem ipsum dolor sit amet consectetur<br>adipisicing elit. Totam possimus odit eos reprehenderit magnam.<br>Tenetur sit saepe voluptate? Dolorem ipsum magnam dolores adipisci consectetur <br> soluta quibusdam unde eligendi explicabo quod.</p>
-    </div>
-  </div>
-</div>
+@section('hero')
+<h1 class="text-white">Hewan</h1>
+<h1 class="text-white">Tropis di Dunia</h1>
+<p class="text-white mt-4">Lorem ipsum dolor sit amet consectetur<br>adipisicing elit. Totam possimus odit eos reprehenderit magnam.<br>Tenetur sit saepe voluptate? Dolorem ipsum magnam dolores adipisci consectetur <br> soluta quibusdam unde eligendi explicabo quod.</p>
 @endsection
 
 @section('about')

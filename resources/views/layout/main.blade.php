@@ -42,7 +42,14 @@
       </div>
     </nav>
 
-    @yield('container')
+    <div class="container">
+      <div class="row">
+        <div class="col-10 ml-4 @if (!Request::is('/')) mt-5 @endif">
+          @yield('hero')
+        </div>
+      </div>
+    </div>
+
     @yield('about')
     @yield('index-3')
     @yield('berita')

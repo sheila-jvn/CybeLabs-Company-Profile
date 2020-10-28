@@ -8,15 +8,7 @@
 @section('title', 'Berita')
 
 @section('container')
-<style>
-</style>
-<div class="container">
-  <div class="row">
-    <div class="col-10 mt-5 ml-4">
-      <h1 class="text-white">Berita</h1>
-    </div>
-  </div>
-</div>
+<h1 class="text-white">Berita</h1>
 @endsection
 
 @section('berita2')
