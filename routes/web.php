@@ -13,21 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','HomeController@index');
-
-Route::get('/tentang', function () {
-    return view('tentang');
-});
-
-Route::get('/berita', function () {
-    return view('berita');
-});
-
-Route::get('/galeri', function () {
-    return view('galeri');
-});
-Route::get('/kontak', function () {
-    return view('kontak');
-});
-
-
+Route::get('/', 'HomeController@index');
+Route::get('/tentang', 'TentangController@index');
+Route::get('/berita', 'BeritaController@index');
+Route::get('/galeri', 'GaleriController@index');
+Route::get('/kontak', 'KontakController@index');
