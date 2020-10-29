@@ -1,48 +1,91 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-  <title>Admin | Tropisianimal</title>
+  <meta charset="utf-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <title>@yield('title')</title>
+  <meta content="lab2023" name="author" />
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+  <link href="/assets/stylesheets/application-a07755f5.css" rel="stylesheet" type="text/css" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
 </head>
 
-<body>
+<body class="main page">
+  <!-- Navbar -->
+  <div class="navbar navbar-default" id="navbar">
+    <a class="navbar-brand" href="#">
+      <i class="icon-beer"></i>
+      Tropisianimal
+    </a>
+    <ul class="nav navbar-nav pull-right">
+      <li class="dropdown user">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <i class="icon-user"></i>
+          <strong>John DOE</strong>
+          <img class="img-rounded" src="http://placehold.it/20x20/ccc/777" />
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Edit Profile</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="/">Sign out</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-3"></div>
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <section id="sidebar">
+      <i class="icon-align-justify icon-large" id="toggle"></i>
+      <ul id="dock">
+        <li class="@yield('homeIcon') launcher">
+          <i class="icon-dashboard"></i>
+          <a href="/admin/home">Home</a>
+        </li>
+        <li class="@yield('tentangIcon') launcher">
+          <i class="icon-file-text-alt"></i>
+          <a href="/admin/tentang">Tentang</a>
+        </li>
+        <li class="@yield('beritaIcon') launcher">
+          <i class="icon-table"></i>
+          <a href="/admin/berita">Berita</a>
+        </li>
+        <li class="@yield('galeriIcon') launcher">
+          <i class="icon-dashboard"></i>
+          <a href="/admin/galeri">Galeri</a>
+        </li>
+        <li class="@yield('kontakIcon') launcher">
+          <i class="icon-file-text-alt"></i>
+          <a href="/admin/kontak">Kontak</a>
+        </li>
+      </ul>
+    </section>
 
-      <div class="col-sm-9">
-      </div>
+    <!-- Tools -->
+    <section id="tools">
+      <ul class="breadcrumb" id="breadcrumb">
+        <li class="title">@yield('title')</li>
+      </ul>
+    </section>
+    <!-- Content -->
+    <div id="content">
+      @yield('content')
     </div>
-
-
   </div>
-  </div>
-
-
-
-
-
-
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+  <!-- Footer -->
+  <!-- Javascripts -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" type="text/javascript"></script>
+  <script src="/assets/javascripts/application-985b892b.js" type="text/javascript"></script>
 </body>
 
 </html>
