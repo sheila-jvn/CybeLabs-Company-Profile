@@ -18,3 +18,5 @@ Route::get('/tentang', 'TentangController@index');
 Route::get('/berita', 'BeritaController@index');
 Route::get('/galeri', 'GaleriController@index');
 Route::get('/kontak', 'KontakController@index');
+
+Route::get('/admin/login', 'AdminController@index');
