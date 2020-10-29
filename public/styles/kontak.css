@@ -11,7 +11,7 @@ h1 {
 .btn {
     font-family: light;
     border-radius: 0;
-    font-size: 15px;
+    font-size: 18px;
     background-color: #047e00;
     width: 350px;
     height: 50px;
@@ -25,12 +25,10 @@ h1 {
 .form {
     height: 50px;
     border-radius: 0%;
-    font-family: light;
 }
 
 .textarea {
     border-radius: 0%;
-    font-family: light;
 }
 .lingkaran {
     display: flex;
@@ -40,4 +38,13 @@ h1 {
     height: 50px;
     background-color: #047e00;
     border-radius: 100%;
+}
+.text-1 {
+    font-family: semiBold;
+}
+.text-2 {
+    font-family: thin;
+}
+.placeholder {
+    font-family: thin;
 }

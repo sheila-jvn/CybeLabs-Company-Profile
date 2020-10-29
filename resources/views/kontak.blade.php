@@ -55,6 +55,28 @@
         </div>
       </div>
     </div>
+    <div class="row mt-3">
+      <div class="col-4 d-flex justify-content-center">
+        <p class="text-1">Email</p>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <p class="text-1">Phone</p>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <p class="text-1">Location</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 d-flex justify-content-center">
+        <p class="text-2">tropisianimal@gmail.com</p>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <p class="text-2">+62 812 3456 7890</p>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <p class="text-2 text-center">Kota Bandung, Jawa Barat <br> Indonesia</p>
+      </div>
+    </div>
   </div>
 
 </section>
